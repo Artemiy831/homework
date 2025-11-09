@@ -1,11 +1,28 @@
-
-.some-text{
+.hhh {
     font-family: "Open Sans", serif;
     font-size: 20px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
     font-weight: 300;
     font-style: italic;
+}
+
+.text {
+    text-decoration-line: line-through;
+}
+
+.some-text {
+    text-align: center;
+}
+
+.some {
     padding-right: 30px;
+    color: rgb(78, 1, 155);
+    text-decoration: wavy;
+    text-decoration-line: overline;
+}
+
+.ggg {
     letter-spacing: 5px;
-    }
+    text-decoration: underline;
+}
