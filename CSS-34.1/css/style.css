@@ -1,0 +1,10 @@
+.block{
+    width: 220px;
+    height: 180px;
+    background-color: #c57616;
+    border-radius: 15px;
+    box-shadow: inset -10px 15px 20px 10px #d17e17;
+    border: 3px groove #2b2217;
+    display: inline-block;
+    margin: 5px;
+}
