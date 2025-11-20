@@ -51,7 +51,11 @@ body {
 }
 
 .box__scale:hover{
-    animation: move-block 1.2s 1;
+    animation: move-block  1;
+}
+
+span{
+    transition-delay: 1.2S;
 }
 
 @keyframes move-box__scale {
