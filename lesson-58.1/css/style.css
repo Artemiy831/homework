@@ -56,6 +56,7 @@ body {
 
 span{
     transition-delay: 1.2S;
+    transition-duration: .4s;
 }
 
 @keyframes move-box__scale {
@@ -66,3 +67,4 @@ span{
         left: 100%;
     }
 }
+
