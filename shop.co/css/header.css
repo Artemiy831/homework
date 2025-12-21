@@ -1,0 +1,125 @@
+/* .header {
+  background: url("../img/boy-girl.png") 50% 100% / cover no-repeat;
+} */
+
+.header__top {
+  margin-top: 24px;
+}
+
+.header__top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  max-width: 160px;
+}
+
+.nav {}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__item {}
+
+.nav__arrow-img {}
+
+.nav__link {
+  display: block;
+  padding: 5px 0;
+}
+
+.burger-icon {}
+
+.hero__inner {
+  display: flex;
+  align-items: end;
+  gap: 84px;
+  position: relative;
+}
+
+/* .hero__inner::before {
+    content: url("../img/decor/yula-before.svg");
+    position: absolute;
+    top: -4%;
+    left: 0%;
+}
+.hero__inner::after {
+    content: url("../img/decor/yula-after.svg");
+    position: absolute;
+    top: 4%;
+    left: 0%;
+} */
+
+.hero__button {
+  color: #ffffff;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.hero__inner {}
+
+.hero__content {}
+
+.hero__title {
+  margin-top: 106px;
+  color: var(--general-text);
+  font-family: 'FONTSPRING DEMO - Integral CF Heavy';
+  font-size: 57px;
+  font-weight: 400px;
+  line-height: 64px;
+}
+
+.hero__text {
+  margin: 34px 0 32px;
+  color: var(--accent-text);
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 22px;
+}
+
+.hero__img-conrol {}
+
+.hero__img-conrol--mobile {}
+
+.hero__img-button {}
+
+.hero__button {
+  color: #ffffff;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 19px;
+}
+
+.hero__statistics {
+  display: flex;
+}
+
+.hero__statistics-number {
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.hero__statistics-text {
+  color: var(--accent-text);
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
