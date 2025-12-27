@@ -1,0 +1,357 @@
+/* Всплывающие окно над хедером */
+
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--banner-h);
+  background: var(--general-text);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transform: translateY(0);
+  transition: transform .35s ease;
+}
+
+.top-banner button {
+  background: none;
+  border: none;
+  color: var(--general-bg);
+  font-size: 24px;
+  margin-left: 12px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Состояние «убрали» */
+.top-banner.banner-hidden {
+  transform: translateY(calc(-1 * var(--banner-h)));
+}
+
+/* ХЭДЕР (под баннером, если фикс.) */
+.header {
+  position: sticky;
+  /* или fixed – по вашему макету */
+  top: var(--banner-h);
+  /* прилипает под баннером */
+  height: var(--header-h);
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+  transition: top .35s ease;
+  /* плавно «едет» вверх */
+}
+
+/* Когда баннер скрыт → убираем отступ сверху */
+body.banner-closed .header {
+  top: 0;
+}
+
+.banner-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#close-banner {
+  margin-left: auto;
+  /* кнопка уезжает вправо */
+}
+
+
+/* центрирующая коробка = ширина сайта */
+.banner-center {
+  width: 100%;
+  max-width: 1271px;
+  /* ваш макет */
+  margin: 0 auto;
+  /* выравнивание по центру окна */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* текст строго посередине линии */
+  position: relative;
+}
+
+/* кнопка прижимается к правому краю этой коробки */
+#close-banner {
+  position: absolute;
+  right: 0;
+  /* "конец" = правый край 1271-й полосы */
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+/*header */
+
+
+.header__hero {
+  background: url("../img/boy-girl.png") 50% 100% / cover no-repeat;
+
+}
+
+.header__top {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.header__top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  gap: 40px;
+}
+
+.header__logo {
+  max-width: 160px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+  
+}
+
+.nav__item {
+  
+}
+
+.nav__item:nth-child(3) .nav__link{
+  white-space: nowrap;
+}
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav__arrow-img {
+  width: 11.5px;
+  height: 6.5px;
+  object-fit: contain;
+}
+
+/* поискоая строка */
+
+/* 1.  контейнер всей поисковой строки */
+
+.nav__button-search {
+  max-width: 462px;
+  height: 48px;
+  width: 100%;          
+  background: #F0F0F0;  
+  border-radius: 62px;  
+  overflow: hidden;
+}
+
+/* 2.  внутренняя flex-полоска */
+.search__product {
+  display: flex;
+  align-items: center;  
+  height: 100%;
+}
+
+/* 3.  иконка лупы */
+.search__img {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;  
+  margin-right: 12px; 
+  cursor: pointer;    
+}
+
+/* 4.  собственно поле ввода */
+.product__input {
+  width: 130px;       
+  height: 22px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: var(--accent-text);   
+}
+
+/* placeholder в том же стиле */
+.product__input::placeholder {
+  color: var(--accent-text);
+  opacity: .6;
+}
+
+/* конец  */
+
+
+/* иконки */
+
+.nav__icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.nav__icons .nav__img {
+  margin: 0;
+  line-height: 0;
+}
+
+.nav__icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* конец */
+
+/* ------------- */
+
+
+
+.burger-icon {}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  position: relative;
+}
+
+.hero__inner::before {
+    content: url("../img/decor/yula-before.svg");
+    position: absolute;
+    top: 43%;
+    right: 42%;
+}
+.hero__inner::after {
+    content: url("../img/decor/yula-after.svg");
+    position: absolute;
+    top: 12%;
+    right: 0%;
+}
+
+.hero__content {}
+
+.hero__title {
+  margin-top: 106px;
+  color: var(--general-text);
+  font-family: 'FONTSPRING DEMO - Integral CF Heavy';
+  font-size: 57px;
+  font-weight: 400px;
+  line-height: 64px;
+  max-width: 577px;
+}
+
+.hero__text {
+  max-width: 551px;
+  margin: 34px 0 32px;
+  color: var(--accent-text);
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 22px;
+}
+
+.hero__button {
+  max-width: 210px;
+  height: 52px;
+  display: flex;
+  background: var(--general-text);
+  border-radius: 62px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 54px 16px 54px;
+}
+
+.hero__img-conrol {}
+
+.hero__img-conrol--mobile {}
+
+.hero__img-button {}
+
+.hero__button {
+  color: #ffffff;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 19px;
+}
+
+.hero__statistics {
+  display: flex;
+  position: static;
+  margin-bottom: 116px;
+
+}
+
+.stat-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__statistics-general-number {
+  max-width: 171px;
+}
+
+.hero__statistics-number {
+  display: block;
+  text-align: left;
+  position: relative;
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.hero__statistics-general-text {
+  max-width: 182px;
+}
+
+.hero__statistics-text {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  color: var(--accent-text);
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  white-space: nowrap;
+  display: block;
+  text-align: left;
+}
+
+
+.hero__statistics-img {
+  margin: 0 31.5px 0 32.5px;
+}
