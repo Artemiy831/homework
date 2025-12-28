@@ -1,0 +1,772 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+@import "header.css";
+@import "footer.css";
+
+
+/* -------------------------------------------------- */
+
+/* MAIN BRAND */
+
+
+.brand__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 104px;
+  width: 100%;
+  height: 122px;
+  background: var(--general-text);
+  padding: 44px 15px;
+}
+
+
+.brand__inner {
+  padding: 0 max(15px, 50% - 660px);
+}
+
+
+.brand__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+/* MAIN RECEIPTS*/
+
+.receipts__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.receipts__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  margin-top: 143px;
+  margin-bottom: 55px;
+
+  color: var(--general-text);
+  font-family: 'FONTSPRING DEMO - Integral CF Heavy';
+  font-style: 'Regular';
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.receipts__thing-img {
+  margin-bottom: 16px;
+  border-radius: 20px;
+}
+
+.receipts__title-thing {
+  margin-bottom: 8.26px;
+
+  max-width: 228px;
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+
+}
+
+.receipts__testimonials {
+  margin-bottom: 8.26px;
+}
+
+.receipts__testimonials:nth-child(7) {
+  margin-right: 13px;
+}
+
+.receipts__testimonials-2,
+.receipts__testimonials-4 {
+  margin-right: 13px;
+}
+
+.receipts__price-line {
+  display: flex;
+  /* уже есть, но оставляем */
+  align-items: center;
+  gap: 10px;
+  /* расстояние между элементами */
+  height: 32px;
+}
+
+.receipts__price-line .receipts__price,
+.receipts__price-line .receipts__price-dim,
+.receipts__price-line .receipts__button-sale {
+  display: inline-block;
+  margin: 0;
+  /* убираем стандартные отступы <p> */
+  line-height: 1;
+}
+
+.receipts__price {
+  margin-bottom: 36px;
+
+  max-width: 67px;
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.receipts__price-2 {
+  max-width: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.receipts__price-dim {
+  display: inline-block;
+
+  max-width: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: #00000066;
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-decoration-line: line-through;
+}
+
+
+.receipts__button-sale {
+  border-radius: 62px;
+  background: #ff33331a;
+  width: 58px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12;
+  padding: 6px 14px 6px 14px;
+}
+
+.receipts__button-sale-text {
+  display: flex;
+  width: 31px;
+  height: 16px;
+
+  color: #ff3333;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Satoshi';
+  font-style: Medium;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+
+/* Кнопка Посмотреть все */
+
+.receipts__button {
+  display: block;
+  margin: 0 auto;
+  max-width: 218px;
+  height: 52px;
+  padding: 16px 54px;
+  box-sizing: border-box;
+  border: 1px solid var(--general-text);
+  border-radius: 62px;
+}
+
+.receipts__button-text {
+  max-width: 127px;
+  height: 22px;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* MAIN SALES*/
+
+
+.sales__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sales__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  margin-top: 128PX;
+  margin-bottom: 55px;
+
+  color: var(--general-text);
+  font-family: 'FONTSPRING DEMO - Integral CF Heavy';
+  font-style: 'Regular';
+  font-size: 48px;
+  font-weight: 400px;
+  line-height: 58px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.sales__thing-img {
+  margin-bottom: 16px;
+  border-radius: 20px;
+}
+
+.sales__title-thing {
+  margin-bottom: 8.26px;
+  max-width: 260px;
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+
+}
+
+.sales__testimonials {
+  margin-bottom: 8.26px;
+}
+
+.sales__testimonials:nth-child(7) {
+  margin-right: 13px;
+}
+
+.sales__testimonials-5,
+.sales__testimonials-6,
+.sales__testimonials-7,
+.sales__testimonials-8 {
+  margin-right: 13px;
+}
+
+.sales__price-line {
+  display: flex;
+  /* уже есть, но оставляем */
+  align-items: center;
+  gap: 10px;
+  /* расстояние между элементами */
+  height: 32px;
+}
+
+.sales__price-line .sales__price,
+.sales__price-line .sales__price-dim,
+.sales__price-line .sales__button-sale {
+  display: inline-block;
+  margin: 0;
+  /* убираем стандартные отступы <p> */
+  line-height: 1;
+}
+
+.sales__price {
+  margin-bottom: 36px;
+
+  max-width: 67px;
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.sales__price-2 {
+  max-width: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.sales__price-dim {
+  display: inline-block;
+
+  max-width: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: #00000066;
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-decoration-line: line-through;
+}
+
+
+.sales__button-sale {
+  border-radius: 62px;
+  background: #ff33331a;
+  width: 58px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12;
+  padding: 6px 14px 6px 14px;
+}
+
+.sales__button-sale-text {
+  display: flex;
+  width: 31px;
+  height: 16px;
+
+  color: #ff3333;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Satoshi';
+  font-style: Medium;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+
+/* Кнопка Посмотреть все */
+
+.sales__button {
+  display: block;
+  margin: 0 auto;
+  max-width: 218px;
+  height: 52px;
+  padding: 16px 54px;
+  box-sizing: border-box;
+  border: 1px solid var(--general-text);
+  border-radius: 62px;
+  margin-bottom: 80px;
+}
+
+.sales__button-text {
+  max-width: 127px;
+  height: 22px;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* MAIN CHOOSE */
+
+.main__choose {
+  height: 866px;
+
+  border-radius: 40px;
+  background: #f0f0f0;
+  margin-bottom: 80px;
+}
+
+.choose__title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0 64px;
+
+  color: var(--general-text);
+  font-family: 'FONTSPRING DEMO - Integral CF Heavy';
+  font-style: 'Regular';
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.choose__inner {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.choose__subtitle-img {
+  position: absolute;
+}
+
+.choose__subtitle-img:nth-child(1) {
+  width: 407px;
+  height: 289px;
+  /* background: url(image); */
+  top: 100px;
+  right: 100px;
+}
+
+.choose__subtitle-img:nth-child(2) {
+  width: 684px;
+  height: 289px;
+  /* background: url(image); */
+  top: 0;
+  right: 0;
+}
+
+.choose__subtitle-img:nth-child(3) {
+  width: 407px;
+  height: 289px;
+  background: url(image);
+  top: 10px;
+  left: 10px;
+}
+
+.choose__subtitle-img:nth-child(4) {
+  width: 684px;
+  height: 289px;
+  /* background: url(image); */
+  top: 0px;
+  right: 0px;
+}
+
+.choose__subtitle-img-free {
+  width: 407px;
+  height: 289px;
+}
+
+.choose__subtitle-img-formal {
+  width: 684px;
+  height: 289px;
+}
+
+.choose__subtitle-img-evening {
+  width: 684px;
+  height: 289px;
+}
+
+.choose__subtitle-img-sport {
+  width: 407px;
+  height: 289px;
+}
+
+
+
+
+/* MAIN TETIMONUALS */
+
+.testimonials__slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.testimonials__slider {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.testimonials__slide {
+  flex: 0 0 400px;
+  margin-right: 20px;
+}
+
+
+.main__testimonials {}
+
+.testimonials__inner {}
+
+.testimonials__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.testimonials__title {
+  margin-bottom: 40px;
+
+  max-width: 502px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--general-text);
+  font-family: 'FONTSPRING DEMO - Integral CF Heavy';
+  font-style: Regular;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.title {}
+
+.testimonials__nav {
+  display: flex;
+  align-items: center;
+  gap: 21.25px;
+}
+
+.testimonials__prev,
+.testimonials__next {
+  display: flex;
+  background: transparent;
+}
+
+.testimonials__prev {}
+
+.testimonials__next {
+  margin-right: 3px;
+}
+
+.testimonials__slide {
+  box-sizing: border-box;
+  border: 1px solid #0000001a;
+  border-radius: 20px;
+
+  max-width: 400px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24 342;
+  padding: 28px 32px;
+}
+
+.testimonials__slide-inside {
+  max-width: 336px;
+  height: 183.58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15;
+}
+
+.testimonials__student {}
+
+.testimonials__student-img {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 6.49px;
+}
+
+.testimonials__student-name {
+  margin-bottom: 12px;
+
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Bold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.testimonials__student-check {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__quote {
+  max-width: 336px;
+  height: 110px;
+
+  color: var(--accent-text);
+  font-family: 'Satoshi';
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* MAIN EMAIL */
+
+.footer-wrapper {
+  background: #f0f0f0; 
+}
+
+.main__email {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  margin-bottom: 50px;
+}
+
+.email__inner {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 36px 64px;
+
+  border-radius: 20px;
+  background: var(--general-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.email__title {
+  max-width: 689px;
+  height: 94px;
+  flex: 1 1 auto;
+  color: #ffffff;
+  font-family: 'FONTSPRING DEMO - Integral CF Heavy';
+  font-style: Regular;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.email__button {
+  width: 100%;
+  max-width: 349px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 16px 12px 16px;
+
+  border-radius: 62px;
+  background: #ffffff;
+}
+
+.email__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 349px;
+}
+
+.email__product {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.email__img {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.email__label {
+  flex: 1;
+}
+
+.email__input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.email__input::placeholder {
+  color: #999;
+  font-family: 'Satoshi';
+  font-size: 16px;
+}
+
+.email__button-2 {
+  width: 100%;
+  max-width: 349px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px 12px 16px;
+
+  border-radius: 62px;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.email__button-2-text {
+  color: var(--general-text);
+  font-family: 'Satoshi';
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+

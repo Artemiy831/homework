@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi Medium'), local('Satoshi-Medium'),
+        url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+        url('../fonts/Satoshi-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Integral CF';
+    src: local('FONTSPRING DEMO - Integral CF Medium Regular'), local('FONTSPRINGDEMO-IntegralCFMediumRegular'),
+        url('../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Integral CF';
+    src: local('FONTSPRING DEMO - Integral CF Regular'), local('FONTSPRINGDEMO-IntegralCFRegular'),
+        url('../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi Regular'), local('Satoshi-Regular'),
+        url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+        url('../fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
