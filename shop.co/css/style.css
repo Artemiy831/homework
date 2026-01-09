@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 0 104px;
+    gap: 0 106px;
     width: 100%;
     max-width: 1271px;
     margin: 0 auto;
@@ -2842,4 +2842,5 @@
     .footer__down-payment {
       display: flex;
     }
+
   }
