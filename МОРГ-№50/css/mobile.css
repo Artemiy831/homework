@@ -1,0 +1,267 @@
+/* ===== MOBILE PHONE BAR (скрыт по умолчанию) ===== */
+.mobile-phone-bar {
+  display: none;
+}
+
+/* ===== SIDEBAR CLOSE BUTTON (скрыт по умолчанию) ===== */
+.sidebar-close-btn {
+  display: none;
+}
+
+/* ===== BURGER BUTTON ===== */
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.burger-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+  transform-origin: center;
+}
+
+/* Burger → X анимация */
+.burger-btn.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burger-btn.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.burger-btn.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== SIDEBAR OVERLAY ===== */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 199;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.sidebar-overlay.visible {
+  opacity: 1;
+}
+
+/* ===== MOBILE HEADER ===== */
+@media (max-width: 1150px) {
+
+  /* Показываем бургер, прячем лишнее в хедере */
+  .burger-btn {
+    display: flex;
+  }
+
+  header {
+    padding: 10px 14px;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+  }
+
+  /* Телефон убираем из хедера на мобилке — показываем в шапке контента */
+  .header-phone {
+    display: none;
+  }
+
+  .header-info-btn {
+    display: none;
+  }
+
+  /* Хлебные крошки тоже прячем */
+  .header-center {
+    display: none;
+  }
+
+  .header-left {
+    order: 1;
+  }
+
+  /* Бургер в правой части */
+  .header-right {
+    gap: 10px;
+  }
+
+  /* ===== SIDEBAR — мобильное поведение ===== */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.12);
+    overflow-y: auto;
+    padding-top: 60px;
+    /* место под кнопку закрытия */
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Кнопка закрытия внутри сайдбара */
+  .sidebar-close-btn {
+    position: sticky;
+    top: -10px;
+    right: 1px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+    color: #555;
+    font-size: 20px;
+    line-height: 1;
+    z-index: 210;
+  }
+
+  /* Показываем оверлей */
+  .sidebar-overlay {
+    display: block;
+  }
+
+  /* ===== LAYOUT ===== */
+  .layout {
+    flex-direction: column;
+  }
+
+  .right-col {
+    width: 100%;
+  }
+
+  /* ===== MAIN CONTENT ===== */
+  .main-content {
+    padding: 16px 0;
+  }
+
+  .main-content-inner {
+    padding: 16px 16px 16px 16px;
+    max-width: 100%;
+  }
+
+  /* Иконки слева от заголовков — убираем абсолютное позиционирование на мобиле */
+  .page-title-icon {
+    position: static;
+    display: inline-flex;
+    margin-bottom: 10px;
+  }
+
+  .page-title-icon-2 {
+    position: static;
+    display: inline-flex;
+    margin-bottom: 10px;
+  }
+
+  .page-title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: unset;
+    margin-bottom: 12px;
+  }
+
+  .page-title-block h1 {
+    font-size: 20px;
+  }
+
+  .assistant-card-header,
+  .primary-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: unset;
+    margin-bottom: 12px;
+  }
+
+  /* Телефон отображаем в верхней части контента */
+  .mobile-phone-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #f0f4fd;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3a7bd5;
+  }
+
+  .mobile-phone-bar svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* ===== INFO CARD ===== */
+  .info-card {
+    padding: 16px 14px;
+  }
+
+  /* ===== ASSISTANT / PRIMARY CARDS ===== */
+  .assistant-card,
+  .primary-card {
+    padding: 16px 14px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-inner {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 14px;
+  }
+
+  .footer-left {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-rating,
+  .footer-gost {
+    max-width: unset;
+    flex: 1;
+    min-width: 130px;
+  }
+
+  .footer-gost svg {
+    max-width: 160px;
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .page-title-block h1 {
+    font-size: 18px;
+  }
+}
+
